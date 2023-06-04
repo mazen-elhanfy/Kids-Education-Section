@@ -1,0 +1,285 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 1200px;
+    height: 800px;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas: 
+    " one one one two two two three three three"
+    " one one one two two two three three three"
+    " one one one two two two three three three"
+    " one one one five five five three three three"
+    " one one one five five five three three three"
+    " four four four five five five three three three"
+    " four four four five five five three three three"
+    " four four four five five five six six six"
+    " four four four five five five six six six";
+}
+.container>div{
+    position: relative;
+    margin: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+        color: #fff;
+}
+/*start of the first section*/
+.one{
+    grid-area: one;
+    background-color: #edbf47;  
+}
+.one img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 40%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.one h2{
+    position: absolute;
+    left: 10%;
+    top: 45%;
+    text-transform: capitalize;
+
+}
+.one .info{
+    position: absolute;
+        left: 10%;
+        top: 60%;
+        width: 80%;
+        height: 35%;
+        white-space: normal;
+    
+}
+.one .more{
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 10%;
+    top: 85%;
+    color: #FFF;
+    text-transform: capitalize;
+    background-color: #b88401;
+}
+.one .news{
+    text-transform: uppercase;
+        width: 80px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        background-color: #585858;
+        position: absolute;
+        left: 75%;
+        top: 5%;
+}
+/*end of the first section*/
+
+/*start of the two sectiom*/
+.two{
+    grid-area: two;
+    background-color: #ec774b;
+}
+.two h2{
+    width: 60%;
+    height:60%;
+    position: absolute;
+    left: 20%;
+    top: 5%;
+}
+.two .logo{
+    color: #882b0a;
+    font-size: 65px;
+    position: absolute;
+    left:20%;   
+    top: 60%;
+    font-weight: bold;
+}
+.two .name{
+    position: absolute;
+        left: 35%;
+        top: 75%;
+        font-weight: bold;
+        font-size: 30px;
+        text-transform: capitalize;
+}
+/*end of the two section*/
+/*start of the third section*/
+.three{
+    grid-area: three;
+    background-color: #74cee4;
+}
+.three .news {
+    text-transform: uppercase;
+    width: 80px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #585858;
+    position: absolute;
+    left: 75%;
+    top: 5%;
+}
+.three img{
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.three h2 {
+    position: absolute;
+    left: 10%;
+    top: 60%;
+    text-transform: capitalize;
+
+}
+
+.three .info {
+    position: absolute;
+    left: 10%;
+    top: 70%;
+    width: 80%;
+    height: 35%;
+    white-space: normal;
+
+}
+
+.three .more {
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 10%;
+    top: 90%;
+    color: #FFF;
+    text-transform: capitalize;
+    background-color: #007694
+}
+/*end of the third section*/
+/* start of the fouth section*/
+.four{
+    grid-area: four;
+    background-color: #74cee4;
+}
+.four img{
+    width: 100%;
+        height: 80%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        position: absolute;
+        left: 0;
+        top: 0;
+}
+.four .newS{
+        text-transform: uppercase;
+            width: 80px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            background-color: #585858;
+            position: absolute;
+            left: 75%;
+            top: 5%;
+}
+.four h2{
+    text-transform: capitalize;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+/*end of the fourth section*/
+/*start of the fifth section*/
+.five{
+    grid-area: five;
+    background-color: #e16b6c;
+}
+.five .news {
+    text-transform: uppercase;
+    width: 80px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #585858;
+    position: absolute;
+    left: 75%;
+    top: 5%;
+}
+
+.five img {
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.five h2 {
+    position: absolute;
+    left: 10%;
+    top: 60%;
+    text-transform: capitalize;
+
+}
+
+.five .info {
+    position: absolute;
+    left: 10%;
+    top: 70%;
+    width: 80%;
+    height: 35%;
+    white-space: normal;
+
+}
+
+.five .more {
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 10%;
+    top: 90%;
+    color: #FFF;
+    text-transform: capitalize;
+    background-color: #007694
+}
+/*end of the fifith section*/
+.six{
+    grid-area: six;
+        background-color: #c388ce;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+}
